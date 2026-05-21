@@ -10,7 +10,7 @@ Barbarian = Adventurer(
 
 Sorceress = Adventurer(
     "Selena the Sorceress",
-    ["fireball", "blizzard", "charm", "intuition", "teleport"]
+    ["fireball", "frostbolt", "charm", "intuition", "teleport"]
 )
 
 

@@ -1,9 +1,11 @@
 import player
+import adventurers
 
 class Event:
-    def __init__(self, name, description):
+    def __init__(self, name, description, options_func):
         self.name = name
         self.description = description
+        self.options = options_func
 
     def get_options(self, player):
         pass
@@ -11,9 +13,20 @@ class Event:
     def resolve(self, choice, player):
         pass
 
+def door_options(self, player):
+    opts = {
+        "1": "Knock on the door.",
+        "2": "Walk away."
+    }
+    if player.adventurer == "Scoundrel":
+        opts["3"] = "Pick the lock."
+    elif player.adventurer == "Sorceress":
+        opts["3"] = "Freeze the lock with an ice spell."
+
 LockedDoor = Event(
     "locked door",
-    "You come across a rusted metallic door.  It's sealed shut, with a large lock in the middle of it."
+    "You come across a rusted metallic door.  It's sealed shut, with a large gothic lock in the middle of it.",
+    door_options
 )
 
 Cyclops = Event(
