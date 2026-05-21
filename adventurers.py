@@ -4,17 +4,17 @@ class Adventurer:
         self.abilities = abilities
 
 Barbarian = Adventurer(
-    "Bob the Barbarian",
+    "Barbarian",
     ["intimidate", "fight", "athletics", "drink", "smash"]
 )
 
 Sorceress = Adventurer(
-    "Selena the Sorceress",
+    "Sorceress",
     ["fireball", "frostbolt", "charm", "intuition", "teleport"]
 )
 
 
 Scoundrel = Adventurer(
-    "Sal the Scoundrel",
+    "Scoundrel",
     ["stealth", "lockpick", "swindle", "cheapshot", "gamble"]
 )

@@ -22,6 +22,8 @@ def door_options(self, player):
         opts["3"] = "Pick the lock."
     elif player.adventurer == "Sorceress":
         opts["3"] = "Freeze the lock with an ice spell."
+    else: ## Is a barbarian
+        opts["3"] = "Smash your way through the door."
 
 LockedDoor = Event(
     "locked door",
